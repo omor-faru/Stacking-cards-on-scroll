@@ -20,7 +20,7 @@ const CartItems = [
     icon: <TrendingUp size={36} color="red" />,
     color: '#1f2937',
   },
-  
+
   {
     id: 2,
     title: 'Trade with clarity',
@@ -103,7 +103,16 @@ export default function Cards() {
   )
 }
 
-function Card({ i, title, description, icon, color, progress, range, targetScale }) {
+function Card({
+   i, 
+   title,
+    description, 
+    icon, 
+    color, 
+    progress, 
+    range, 
+    targetScale 
+  }:CardProps) {
   const ref = useRef(null)
 
   const scale = useTransform(progress, range, [1, targetScale])
@@ -137,3 +146,15 @@ function Card({ i, title, description, icon, color, progress, range, targetScale
     </div>
   )
 }
+
+
+
+
+
+
+
+
+
+
+
+
