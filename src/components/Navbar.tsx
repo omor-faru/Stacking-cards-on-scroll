@@ -84,7 +84,7 @@
 //   const { scrollYProgress } = useScroll({
 //     target: container,
 //     offset: ['start start', 'end end'],
-//   });
+//   })
 
 //   return (
 //     <ReactLenis root>
