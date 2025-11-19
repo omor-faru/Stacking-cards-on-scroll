@@ -1,6 +1,9 @@
 import { motion, useScroll, useTransform  } from 'framer-motion'
 import { useRef } from 'react'
 import { ReactLenis } from 'lenis/react'
+import { MotionValue } from "framer-motion"
+import type { ReactNode } from "react"
+
 
 import {
   Antenna,
@@ -11,6 +14,18 @@ import {
   TrendingUp,
   VolumeOff,
 } from 'lucide-react'
+
+
+export interface CardProps {
+  i: number
+  title: string
+  description: string
+  icon: ReactNode
+  color: string
+  progress: MotionValue<number>
+  range: number[]
+  targetScale: number
+}
 
 
 const CartItems= [
